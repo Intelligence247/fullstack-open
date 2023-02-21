@@ -3,8 +3,9 @@ import Content from "./Component/Content"
 import Headers from "./Component/Header"
 import Total from "./Component/Total"
 const App = () => {
-    const course = 'Half Stack application development'
-    const parts = [
+  const course = {
+    name: 'Half Stack application development',
+    parts: [
       {
         name: 'Fundamentals of React',
         exercises: 10
@@ -18,14 +19,15 @@ const App = () => {
         exercises: 14
       }
     ]
+  }
 let total=0
-parts.map((part)=>(
+course.parts.map((part)=>(
    total+=part.exercises
   ))
   return (
     <div>
-      <Headers course={course}/>
-      {parts.map((part, index)=>(
+      <Headers course={course.name}/>
+      {course.parts.map((part, index)=>(
         <div key={index}>
        <Content 
        content1={`${part.name} ${part.exercises}`}/>

@@ -14,11 +14,11 @@ const App = () => {
   return (
     <div>
       <Headers course={course}/>
-     <Content 
+      <Content 
      content1={`${part1} ${exercises1}`}
      content2={`${part2} ${exercises2}`}
-     content3={`${part3} ${exercises3}`}/>
-
+     content3={`${part3} ${exercises3}`}/> 
+    
       <Total
       total={'Number of exercises '+ `${exercises1+exercises2+exercises3}`}
       />

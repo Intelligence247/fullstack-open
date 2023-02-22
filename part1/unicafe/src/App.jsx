@@ -9,10 +9,9 @@ const App = () => {
   const average = (neutral+bad)/good
 const StatisticLine=(props)=>{
   return(
-  <div style={{display:"flex", gap:".5rem"}}>
-  <p>{props.text}</p>
-  <p>{props.value}</p>
-  </div>
+  <tbody style={{display:"flex", gap:".5rem"}}>
+  <tr>{props.text}</tr><td>{props.value}</td>
+  </tbody>
   )
 }
 
@@ -25,13 +24,7 @@ const Stattistics = (props) =>{
   
   return(
  <>
-  {/* <h1>Statistic</h1>
-<p>Good {props.good}</p>
-<p>Neutral {props.neutral}</p>
-<p>Bad {props.bad}</p>
-<p>All {props.all}</p>
-<p>Average {props.average}</p>
-<p>Positive {props.positive} %</p> */}
+ 
 <StatisticLine text="good" value={props.good}/>
 <StatisticLine text="neutral" value={props.neutral}/>
 <StatisticLine text="bad" value={props.bad}/>

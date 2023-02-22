@@ -9,6 +9,11 @@ const App = () => {
   const positive= (good*100)/all
   const average = (neutral+bad)/good
 const Stattistics = (props) =>{
+  if(all<=0){
+    return 'No feedback given'
+  }else{
+
+  
   return(
  <>
   <h1>Statistic</h1>
@@ -21,7 +26,7 @@ const Stattistics = (props) =>{
 </>
   )
 }
-
+}
   return (
     <div>
        <h1 className='text-center text-[2rem] text-[green]'>Give Feedback</h1>

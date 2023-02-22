@@ -1,0 +1,19 @@
+.wrapper{
+  background-color: blue;
+  color: wheat;
+  display: flex;
+  height: 20rem;
+  width: 20rem;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+
+}
+button{
+  width: max-content;
+  position: absolute;
+  bottom: 2rem;
+  left: 40%;
+
+}
